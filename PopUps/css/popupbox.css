@@ -5,11 +5,11 @@
   height: auto;
   border: 1px solid grey;
   font-family: Verdana, sans-serif;
-  background-colour: white;
+  background-color: white;
 }
 
 #boxHeader {
-    background-color: #3B8686;
+    background-color: #721277;
     padding: 0px;
 }
 
@@ -23,6 +23,17 @@
     align-items: center;
 }
 
+#borrowKey {
+    color: white;
+}
+
+#close {
+    color: white;
+    font-size: 30px;
+    display: block;
+/*    padding: 0px 5px;*/
+}
+
 #text {
     width: 100%;
     display: flex;
@@ -31,6 +42,9 @@
 }
 
 #link {
+    background-color: #e6d5e7;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     border: none;
     color: black;
     padding 12px 28px;
@@ -38,11 +52,20 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+/*    cursor: pointer;*/
+}
+
+#link:hover {
+    background-color: #ab82b2;
+    color: white;
+    cursor: pointer;
 }
 
 #boxFooter div {
-    background-color: #3B8686;
+    background-color: #721277;
     height: 50px;
     display: flex;
     justify-content: center;
