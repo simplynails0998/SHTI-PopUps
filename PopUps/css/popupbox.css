@@ -1,0 +1,50 @@
+#box {
+  display: block;
+  width: 350px;
+  margin: auto;
+  height: auto;
+  border: 1px solid grey;
+  font-family: Verdana, sans-serif;
+  background-colour: white;
+}
+
+#boxHeader {
+    background-color: #3B8686;
+    padding: 0px;
+}
+
+#boxHeader div {
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 5px;
+}
+
+#link {
+    border: none;
+    color: black;
+    padding 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+#boxFooter div {
+    background-color: #3B8686;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
