@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/popupbox.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/open.js"></script>
+</head>
+    
+<body>
+    <button id="openBorrowBox">Check out</button>
+    <button id="openReturnBox">Check in</button>
+    
+    <div id="borrowpopup">
+        <section id="box">
+            <section id="boxHeader">
+                <div>
+                    <p id="borrowKey">Check out</p>
+                    <span id="borrowclose">&times;</span>
+                </div>
+            </section>
+            <section id="boxContent">
+                <div id="text">
+                    <form>
+                        Key ID<p><input type="text" name="keyid"><br></p>
+                        User ID<p><input type="text" name="userid"><br></p>
+                    </form>
+                </div>
+            </section>
+            <section id="boxFooter">
+                <div>
+                <button id="link" href="#">Check out</button>
+                </div>
+            </section>
+        </section>
+    </div>
+    
+    <div id="returnpopup">
+        <section id="box">
+        <section id="boxHeader">
+            <div>
+                <p id="returnKey">Check in</p>
+                <span id="returnclose">&times;</span>
+            </div>
+        </section>
+        <section id="boxContent">
+            <div id="text">
+                <form>
+                    Key ID<p><input type="text" name="keyid"><br></p>
+                    Location<p><input type="text" name="location"><br></p>
+                </form>
+            </div>
+        </section>
+        <section id="boxFooter">
+            <div>
+                <div>
+                <button id="link" href="#">Check in</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    </div>
+</body>
+</html>

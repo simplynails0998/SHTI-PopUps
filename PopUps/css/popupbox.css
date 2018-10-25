@@ -8,6 +8,20 @@
   background-color: white;
 }
 
+#borrowpopup, #returnpopup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+/*    background-color: aquamarine;*/
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+/*    margin: 5% auto auto auto;*/
+}
+
 #boxHeader {
     background-color: #721277;
     padding: 0px;
@@ -23,11 +37,11 @@
     align-items: center;
 }
 
-#borrowKey {
+#borrowKey, #returnKey {
     color: white;
 }
 
-#close {
+#borrowclose, #returnclose {
     color: white;
     font-size: 30px;
     display: block;
@@ -55,12 +69,34 @@
     width: 90px;
     height: 30px;
     border-radius: 8px;
-/*    cursor: pointer;*/
+    /* cursor: pointer; */
 }
 
 #link:hover {
     background-color: #ab82b2;
     color: white;
+    cursor: pointer;
+}
+
+#openBorrowBox, #openReturnBox {
+    background-color: #ab82b2;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: none;
+    color: white;
+    padding 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 110px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+#openBorrowBox:hover, #openReturnBox:hover {
+    background-color: #e6d5e7;
+    color: black;
     cursor: pointer;
 }
 

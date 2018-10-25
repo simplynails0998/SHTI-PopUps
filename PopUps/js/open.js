@@ -1,9 +1,58 @@
-var modal = document.getElementById("box");
+$(function() {
+    $("#openBorrowBox").click(function(event) {
+        console.log("opening");
+        
+        // var m = event.target;
+        
+        // $("#borrowKey").html(m.borrowKey);
+        
+        $("#borrowpopup").show();
+    });
+    
+    $("#borrowclose").click(function() {
+        console.log("closing");
+        $("#borrowpopup").hide();
+    });
+});
 
-var span = document.getElementById('close');
+$(function() {
+    $("#openReturnBox").click(function(event) {
+        console.log("opening");
+        
+        // var m = event.target;
+        
+        // $("#borrowKey").html(m.borrowKey);
+        
+        $("#returnpopup").show();
+    });
+    
+    $("#returnclose").click(function() {
+        console.log("closing");
+        $("#returnpopup").hide();
+    });
+});
 
-var btn = document.getElementById('openBox');
+//var pop = document.getElementById("openBox");
+//openBox.on('click', openBox);
 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+//function openBox(e) {
+//    
+//    var m = e.target;
+//
+//    var box = document.getElementById("borrowKey");
+//    box.innerHTML = m.borrowKey;
+//
+//    var info = document.getElementById("text");
+//
+//    var output = 
+//
+//    info.innerHTML = output;
+//
+//    var modal = document.getElementById("popup");
+//    modal.style.display = "flex";
+//}
+
+
+//MODAL BOX - CLOSE FUNCTIONS
+
+
